@@ -418,18 +418,18 @@ strong {
   z-index: 0;
 }
 
-.project:after {
+/* .project:after {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   content: "";
-  background: #f65d5d;
+  background: #fcfcfc;
   opacity: 0;
   z-index: 1;
   transition: all 0.3s ease;
-}
+} */
 
 .project img {
   transform: scale(1);
@@ -779,7 +779,7 @@ strong {
 
 .team-content-area:hover,
 .team-content-area:focus {
-  background-color: rgb(40, 146, 188);
+  background-color: rgba(40, 146, 188, 0.45);
 }
 
 
