@@ -746,10 +746,7 @@ strong {
   background-color: rgb(40, 146, 188);
 }
 
-.team-content-area:hover .member-thumb img,
-.team-content-area:focus .member-thumb img {
-  transform: rotate(35deg);
-}
+
 .team-content-area .member-thumb img {
   transition-duration: 500ms;
   width: 100%;
