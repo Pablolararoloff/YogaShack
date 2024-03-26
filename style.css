@@ -410,6 +410,27 @@ strong {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-intro {
+  text-align: center; /* Centra el texto horizontalmente */
+  display: flex;
+  flex-direction: column; /* Organiza los elementos internos en una columna */
+  justify-content: center; /* Centra el contenido verticalmente dentro del contenedor */
+  align-items: center; /* Asegura que los elementos hijos también estén centrados */
+  height: 100%; /* Ajusta esto según necesites */
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .project {
   position: relative;
   width: 100%;
