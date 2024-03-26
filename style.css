@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 :root {
-  --primary-color: rgb(240, 199, 35, 0.75);
+  --primary-color: rgb(240, 199, 35);
   --white-color: #ffffff;
   --dark-color: #171819;
   --about-bg-color: #f9f9f9;
 
-  --head-color: rgb(240, 199, 35, 0.75);
+  --head-color: rgb(240, 199, 35);
   --gray-color: #909090;
   --link-color: #404040;
   --p-color: #666262;
