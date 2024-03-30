@@ -170,6 +170,7 @@ body {
   height: auto;
 }
 
+
 @media (max-width: 768px) {
   .hero-text {
     padding: 0 20px; /* Adds some padding on smaller screens */
@@ -345,6 +346,16 @@ strong {
 
 .home-about {
   padding-bottom: 0;
+}
+
+.btn-primary.custom-btn {
+  background-color: rgb(40, 146, 188) !important; /* Sets the background color */
+  border-color: rgb(40, 146, 188) !important; /* Sets the border color to match */
+}
+
+.btn-primary.custom-btn:hover {
+  background-color: rgb(35, 131, 168) !important; /* Slightly darker shade for hover effect */
+  border-color: rgb(35, 131, 168) !important; /* Hover border color to match */
 }
 
 .spad {
