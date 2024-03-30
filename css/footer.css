@@ -1,0 +1,106 @@
+.footer {
+  background: rgba(240, 199, 35, 0.75);
+  padding-top: 70px;
+  padding-bottom: 30px; /* Added padding at the bottom */
+}
+
+.footer-section,
+.footer-widget,
+.footer-social-icons a {
+  text-align: center; /* Center content for smaller screens */
+}
+.footer-section ul {
+  list-style: none; /* Removes the default list item markers */
+  padding-left: 0; /* Removes the default padding */
+}
+
+.footer-heading,
+.footer-widget h5 {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.footer-hours li,
+.footer-links li a,
+.footer-contact li {
+  list-style: none;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 10px; /* Reduced space between items for compact look */
+}
+
+.footer-hours li i,
+.footer-contact li i {
+  color: #e8505b;
+  margin-right: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Additional spacing before the form */
+}
+
+.subscribe-form input,
+.subscribe-form button {
+  height: 40px; /* Adjusted height for consistency */
+}
+
+.subscribe-form input {
+  flex-grow: 1; /* Input field takes available space */
+  margin-right: -40px; /* Negative margin to overlay button on input */
+}
+
+.footer-social-icons {
+  padding-top: 20px; /* Space before social icons */
+}
+
+.footer-social-icons a:not(:first-child) {
+  padding-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-section,
+  .footer-widget {
+    margin-bottom: 30px; /* Space between sections */
+  }
+
+  .subscribe-form button {
+    width: 40px; /* Adjust button width to fit content */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-social-icons a:not(:first-child) {
+    padding-left: 15px; /* Reduce spacing between icons for very small screens */
+  }
+  .footer-social-icons {
+    text-align: center; /* Centers social icons on smaller screens */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 400px) {
+  .footer-heading,
+  .footer-widget h5,
+  .footer-hours li,
+  .footer-links li a,
+  .footer-contact li {
+    font-size: smaller; /* Reduce font size for very small screens */
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-bottom .footer-social-icons {
+    order: -1; /* Moves social icons above the copyright text */
+    text-align: center; /* Center-align the icons for aesthetics */
+    margin-bottom: 20px; /* Adds some space below the icons */
+  }
+}

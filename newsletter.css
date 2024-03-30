@@ -1,0 +1,81 @@
+/* Enhanced Community Section Styles with Smaller Map */
+.community-section {
+  padding: 60px 15px;
+  background-color: rgba(240, 199, 35, 0.75);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.community-section h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+.community-section p {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Enhanced Styling for the Newsletter Form */
+.community-section .input-group {
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.community-section .form-control {
+  border: 0;
+  box-shadow: none;
+}
+
+.community-section .btn-outline-secondary {
+  border: 0;
+  background-color: #f8b400;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.community-section .btn-outline-secondary:hover {
+  background-color: #db9a00;
+}
+
+/* Adjusted Google Maps Iframe Styles for Smaller Size */
+.community-section iframe {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%; /* Adjust to 100% of its container for better control */
+  max-width: 400px; /* New max-width for a smaller map */
+  margin: auto; /* Center the map in its column */
+  height: 300px; /* Adjusted height for consistency */
+}
+
+/* Improved Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .community-section {
+    padding: 40px 20px;
+  }
+
+  .community-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .community-section .col-md-6 {
+    margin-bottom: 20px;
+    text-align: center; /* Center content for smaller screens */
+  }
+
+  .community-section iframe {
+    max-width: 100%; /* Allow map to expand to full width on smaller screens */
+    height: 250px;
+  }
+}
