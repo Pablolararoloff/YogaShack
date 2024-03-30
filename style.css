@@ -1051,11 +1051,13 @@ button#submit-button:hover {
   border-top: 1px solid #efebeb;
   margin-top: 2.5rem;
   padding-top: 2.5rem;
+  margin-top: -50px;
 }
 
 .google-map iframe {
   width: 100%;
   aspect-ratio: 1 / 1;
+  border-radius: 8px;
 }
 
 /* Media Queries */
