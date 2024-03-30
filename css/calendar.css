@@ -3,16 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto; /* Adjust to fit content */
+  height: auto;
+  /* Adjust to fit content */
   padding: 120px 20px;
   background-color: rgba(240, 199, 35, 0.35);
 }
 
 .pdf-calendar img {
-  width: 70%; /* Makes the image half the width of its container */
-  height: auto; /* Maintains the aspect ratio */
+  width: 70%;
+  /* Makes the image half the width of its container */
+  height: auto;
+  /* Maintains the aspect ratio */
   margin-bottom: 10px;
-  max-width: 100%; /* Ensures the image is never larger than its intrinsic size */
+  max-width: 100%;
+  /* Ensures the image is never larger than its intrinsic size */
 }
 
 .pdf-calendar a {
@@ -20,4 +24,12 @@
   color: rgb(40, 146, 188);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+ 
+  .pdf-calendar img {
+    width: 100%;
+    height: auto;
+  }
 }

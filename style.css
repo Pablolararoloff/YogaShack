@@ -157,9 +157,9 @@ body {
 .logo-image {
   width: 50%;
   max-width: 100%;
-  /* Adjust the logo width as a percentage of its container's width */
+  
   height: auto;
-  /* Maintains the aspect ratio */
+  
   display: block;
   /* To remove any default inline spacing and center the image */
   margin: 0 auto;
@@ -1101,7 +1101,12 @@ button#submit-button:hover {
     padding: 3rem 0; /* Menos padding en las secciones para dispositivos móviles */
   }
 
-  .logo-image {
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+
+   .logo-image {
     width: 80%; /* Logotipo más grande en dispositivos móviles */
   }
 
@@ -1131,5 +1136,6 @@ body {
 @media only screen and (max-width: 576px) {
   body {
     font-size: 12px;
+    
   }
 }

@@ -78,7 +78,14 @@
   .footer-social-icons {
     text-align: center; /* Centers social icons on smaller screens */
   }
+  .footer-bottom .row .col-lg-6,
+  .footer-bottom .row .col-md-6,
+  .footer-bottom .row .col-sm-6 {
+    text-align: center;
+    width: 100%; /* Ensures the column takes full width */
+  }
 }
+
 
 /* Adjustments for very small screens */
 @media (max-width: 400px) {
