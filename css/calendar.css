@@ -9,7 +9,7 @@
 }
 
 .pdf-calendar img {
-  width: 80%; /* Makes the image half the width of its container */
+  width: 70%; /* Makes the image half the width of its container */
   height: auto; /* Maintains the aspect ratio */
   margin-bottom: 10px;
   max-width: 100%; /* Ensures the image is never larger than its intrinsic size */
