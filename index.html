@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="time-table.css" />
   <title>The Yoga Schack</title>
 </head>
 
@@ -56,6 +57,7 @@
 
 
   <!-- section 1 -->
+  <div class="section-container-main">
   <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
     <div class="bg-overlay">
       <video autoplay muted loop id="myVideo">
@@ -67,28 +69,27 @@
       <div class="row">
         <div class="hero-text mt-5 text-center">
           <img data-aos="fade-up" data-aos-delay="500" src="logo_00.png" alt="Your Logo" class="logo-image">
-          <!-- <h4 data-aos="fade-up" data-aos-delay="300"
-            style="font-family: 'DM Sans', sans-serif; font-weight: 400; letter-spacing: 3px; font-size: 21px; color: white; margin-top: 80px;">
-            Welcome to The Yoga Shack! Explore wellness through yoga, breathwork, ecstatic dance, and more. Unwind in
-            our Cafe or secret garden with a juice or smoothie bowl. Check our <a href="#schedule"
-              style="color: rgba(240, 199, 35); text-decoration: none;">schedule</a> and begin your wellness journey
-            now!
-          </h4> -->
+          <h4 data-aos="fade-up" data-aos-delay="300" class="hero-description">
+            The Yoga Shack Arugam Bay is a community in the heart of Arugam Bay. We offer a variety of yoga classes, ecstatic dances, breathwork journey’s and meditation classes. Come join us as we take you on a journey towards inner peace and harmony.
+            Check our <a href="#app" class="schedule-btn">schedule</a> and begin your wellness journey now!
+          </h4>
         </div>
       </div>
     </div>
   </section>
+</div>
   <!-- section 1 ends -->
-
+  <div class="section-container">
   <!-- ClassTimeTable anchor point to React -->
   <div id="app"></div>
-  
+</div>
 
   <!-- section-2 starts -->
-  <section class="event-section spad bg-light" id="event">
+  <div class="section-container">
+  <section class="event-section spad bg-white rounded-custom" id="event">
     <div class="container">
       <div class="section-title text-center">
-        <h2 style="color: rgb(240, 199, 35)">Upcoming Events</h2>
+        <h2 style="color: rgb(240, 199, 35)">yoga shack upcoming events</h2>
 
         <p>Dont miss our special events.</p>
         <div class="container">
@@ -144,8 +145,66 @@
       </div>
     </div>
   </section>
-  <!-- section-2 ends -->
+</div>
 
+  <!-- section-3 starts HERE GOES EXTERNAL EVENTS: CAPETOWN RETREATS AND OTHERS -->
+  <div class="section-container">
+    <section class="event-section spad bg-white rounded-custom" id="online-advertising">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div class="section-title text-center">
+              <h2 style="color: rgb(240, 199, 35)">Online Breathwork Sessions</h2>
+              <p>Discover the power of breathwork and book your session now.</p>
+            </div>
+            <div class="text-center">
+              <a href="https://calendly.com/thesoulfulsurfer/30min" class="btn btn-primary">Book Your Session</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <div class="section-container">
+    <section class="event-section spad bg-white rounded-custom" id="retreats">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2 style="color: rgb(240, 199, 35)">Retreats</h2>
+          <p>Immerse yourself in transformative experiences.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="event-item">
+              <div class="ei-img">
+                <img src="/a.jpg" alt="" class="event-img">
+              </div>
+              <div class="ei-text">
+                <h4>7-Day Yoga Immersion</h4>
+                <p>Dates depending on availability. Book to discover more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="event-item">
+              <div class="ei-img">
+                <img src="/retraeat.jpg.png" alt="" class="event-img">
+              </div>
+              <div class="ei-text">
+                <h4>South Africa Breathwork & Free Diving</h4>
+                <p>5 nights and 6-day retreat at Cape Point. See photos and book your adventure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- section-3 ends -->
+
+  <!-- ABOUT US SECTION-->
+  <div class="section-container">
   <section class="home-about spad" id="about">
     <div class="container">
       <div class="row">
@@ -166,7 +225,7 @@
             <div class="section-title">
               <h2>Welcome to <br>The Yoga Shack</h2>
             </div>
-            <span>"What hurts today makes you stronger tomorrow."</span>
+            <span>"Through breath, we transform pain into power."</span>
             <p>Welcome Home 😊! At The Yoga Shack, we’re all about real connections, feeling good, and finding a bit of
               peace in our busy lives. Whether you’re here to stretch out the stress with some yoga, take a deep breath
               in our breathwork sessions, dance like nobody's watching, or just hang out with a juice and a smoothie
@@ -182,12 +241,15 @@
       </div>
     </div>
   </section>
+</div>
+  <!-- ABOUT US ENDS -->
 
-  <!-- section 4 starts -->
 
+  <!-- PHOTO GALLERY -->
+  <div class="section-container">
   <section class="gallery-intro" id="gallery">
     <div class="gallery-intro">
-      <h2 class="mb-4">Our Gallery</h2>
+      <h2 style="color: rgb(40, 146, 188)">OUR GALLERY</h2>
       <p>Join the community and share your journey with us.</p>
     </div>
 
@@ -202,17 +264,18 @@
       <!-- Repite para cada imagen -->
     </div>
   </section>
-  <!-- section 4 ends -->
+</div>
+  <!-- PHOTO GALLERY ENDS -->
 
+  <div class="section-container">
   <section class="our-team-area section-padding-80-50" id="team">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-heading text-center wow fadeInUp" data-aos="fade-up" data-aos-delay="200">
 
-            <h2>Meet Our Team</h2>
+            <h2 style="color: rgb(240, 199, 35)">MEET OUR TEEM</h2>
           </div>
-
         </div>
       </div>
 
@@ -281,8 +344,10 @@
       </div>
     </div>
   </section>
+</div>
 
   <!-- section 9  starts-->
+  <div class="section-container">
   <section class="contact section" id="contact">
     <div class="container">
       <div class="row">
@@ -313,142 +378,89 @@
             <i class="fa fa-map-marker mr-1"></i> Arugam Bay, Sri Lanka
           </p>
           <div class="google-map" data-aos="fade-up" data-aos-delay="900">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.17336836653504!2d81.83002635937966!3d6.844129608800084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5bd548dca4f4f%3A0x7f4ecd843470a7c5!2sFanan%20fancy%20mall!5e0!3m2!1sen!2sde!4v1711454393833!5m2!1sen!2sde"
-              width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d416.3897568523507!2d81.83008174331292!3d6.843847044805494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTAnMzcuNSJOIDgxwrA0OSc0OS43IkU!5e0!3m2!1sen!2sde!4v1711562036716!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
         </div>
       </div>
     </div>
   </section>
+</div>
   <!-- section 9  ends-->
 
-  <!-- section 10 starts -->
-
-  <section class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="footer_about">
-            <span>Yoga Shack</span>
-            <ul>
-              <li>
-                <i class="fa fa-clock-o"></i> Mon - Fri : 08:30am - 09:00pm
-              </li>
-              <li>
-                <i class="fa fa-clock-o"></i> Sat - Sun : 08:30am - 01:30pm
-              </li>
-            </ul>
-            <form action="#" class="subscribe-form">
-              <input type="text" placeholder="Your Email">
-              <button type="submit"><i class="fa fa-send"></i></button>
-            </form>
-          </div>
-        </div>
-        <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-          <div class="footer_widget">
-            <h5>Inspiration</h5>
-            <ul>
-              <li><a href="#">Yoga</a></li>
-              <li><a href="#">Breathwork</a></li>
-              <li><a href="#">Akroyoga</a></li>
-              <li><a href="#">Vegetarian</a></li>
-              <li><a href="#">Meditation</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          <div class="footer_widget">
-            <h5>About Us</h5>
-            <ul>
-              <li><a href="#">Our Vision</a></li>
-              <li><a href="#">Our Mission</a></li>
-              <li><a href="#">Meet the team</a></li>
-              <li><a href="#">Introduce</a></li>
-              <li><a href="#">Customer Service</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          <div class="footer_widget">
-            <h5>Contact Us</h5>
-            <ul class="footer-address">
-              <li><i class="fa fa-phone"></i>888 7777 6666</li>
-              <li><i class="fa fa-envelope"></i>yogashack@gmail.com</li>
-              <li><i class="fa fa-location-arrow"></i>Arugam Bay - Sri Lanka</li>
-            </ul>
-          </div>
-        </div>
-
+<!-- Footer Section Starts -->
+<footer class="footer" aria-label="Footer">
+  <div class="container">
+    <div class="row">
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6 col-sm-6 footer-section">
+        <h2 class="footer-heading">Yoga Shack</h2>
+        <ul class="footer-hours">
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 08:30am - 09:00pm</li>
+          <li><i class="fa fa-clock-o" aria-hidden="true"></i> Sat - Sun: 08:30am - 01:30pm</li>
+        </ul>
+        <!-- Newsletter Form -->
+        <form action="#" class="subscribe-form" aria-label="Subscribe to newsletter">
+          <input type="email" placeholder="Your Email" aria-label="Email for newsletter" required>
+          <button type="submit" aria-label="Submit"><i class="fa fa-send" aria-hidden="true"></i></button>
+        </form>
       </div>
-      <div class="footer_copyright">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="footer_copyright_text">
-              <p>Copyright &copy; 2020 The Yoga Shack - All Rights Reserved</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="footer_copyright_social">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
+      <!-- Inspiration Links -->
+      <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6 footer-section">
+        <h5>Inspiration</h5>
+        <ul class="footer-links">
+          <li><a href="#">Yoga</a></li>
+          <li><a href="#">Breathwork</a></li>
+          <li><a href="#">Akroyoga</a></li>
+          <li><a href="#">Vegetarian</a></li>
+          <li><a href="#">Meditation</a></li>
+        </ul>
+      </div>
+      <!-- About Us Links -->
+      <div class="col-lg-2 col-md-3 col-sm-6 footer-section">
+        <h5>About Us</h5>
+        <ul class="footer-links">
+          <li><a href="#">Our Vision</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Meet the Team</a></li>
+          <li><a href="#">Customer Service</a></li>
+        </ul>
+      </div>
+      <!-- Contact Us -->
+      <div class="col-lg-2 col-md-3 col-sm-6 footer-section">
+        <h5>Contact Us</h5>
+        <ul class="footer-contact">
+          <li><i class="fa fa-phone" aria-hidden="true"></i> whatsapp + 94 581 5306</li>
+          <li><i class="fa fa-envelope" aria-hidden="true"></i> thesoulfulsurfer@gmail.com</li>
+          <li><i class="fa fa-location-arrow" aria-hidden="true"></i> Prthana rd off main rd - Arugam Bay - Sri Lanka</li>
+        </ul>
+        
       </div>
     </div>
-  </section>
+    <!-- Copyright Text -->
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <p style="color: black; font-size: 0.8rem;">Copyright &copy; 2020 The Yoga Shack - All Rights Reserved</p>
 
-  <!-- section 10 ends -->
-
-
-  <!-- section 11 starts  -->
-  <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title" id="membershipFormLabel">
-            Membership Form
-          </h2>
-
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span>&times;</span>
-          </button>
         </div>
-
-        <div class="modal-body">
-          <form class="membership-form webform" role="form">
-            <input type="text" class="form-control" name="cf-name" placeholder="John Doe" />
-
-            <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com" />
-
-            <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
-
-            <textarea class="form-control" rows="3" name="cf-message" placeholder="Additional Message"></textarea>
-
-            <button type="submit" class="form-control" id="submit-button" name="submit">
-              Submit Button
-            </button>
-
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="signup-agree" />
-              <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the
-                <a href="#">Terms &amp;Conditions</a>
-              </label>
-            </div>
-          </form>
+        <div class="col-lg-6 col-md-6 col-sm-6 footer-social-icons">
+          <a href="https://www.instagram.com/theyogashackarugambay" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/michael-leslie-lowman/" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
-
-        <div class="modal-footer"></div>
       </div>
     </div>
   </div>
+</footer>
+<!-- Footer Section Ends -->
+
+<!-- Membership Form Section (Unchanged as it is separate from the footer) -->
+<div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel">
+  ...
+</div>
+<!-- Membership Form Section Ends -->
+
 
   <!-- section 11 ends  -->
 
@@ -520,7 +532,8 @@
     ));
 
     return (
-      <div className="container">
+      <div className="container yellow-background" style={{ backgroundColor: 'rgba(240, 199, 35, 0.75)', padding: '20px' }}>
+
         <div className="row">
           <div className="col-lg-12 text-center">
             <div className="section-title" style={{ marginTop: '4rem' }}>

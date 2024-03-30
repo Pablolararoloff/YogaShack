@@ -102,6 +102,30 @@ body {
 /* ******************************* */
 /* hero section */
 /* ********************************* */
+.hero-description {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 21px;
+  color: white;
+  margin-top: 80px;
+}
+
+.schedule-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: rgba(240, 199, 35);
+  color: #000; /* Adjust based on your design preference */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.schedule-btn:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 215, 0); /* Slightly lighter shade on hover */
+}
 
 .hero {
   vertical-align: middle;
@@ -114,11 +138,11 @@ body {
   background: var(--dark-color);
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  object-fit: cover;
   opacity: 0.7;
 }
 
@@ -132,6 +156,7 @@ body {
 
 .logo-image {
   width: 50%;
+  max-width: 100%;
   /* Adjust the logo width as a percentage of its container's width */
   height: auto;
   /* Maintains the aspect ratio */
@@ -140,7 +165,16 @@ body {
   margin: 0 auto;
   /* Center the image horizontally in its container */
 }
+.logo-image {
+  max-width: 100%;
+  height: auto;
+}
 
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 0 20px; /* Adds some padding on smaller screens */
+  }
+}
 
 h1,
 h2,
@@ -201,9 +235,29 @@ strong {
   letter-spacing: 0;
 }
 
-.section {
-  padding: 7rem 0;
+.section-container-main {
+  margin-bottom: 0px; /* Space below each section */
 }
+
+.section-container {
+  background-color: rgba(240, 199, 35, 0.35); /* Apply the yellow background */
+  padding: 45px; /* Add some padding */
+     
+}
+
+.rounded-custom {
+  border-radius: 15px; /* Adjust the px value based on your design preference */
+}
+
+
+.section {
+  padding: 12rem 0;
+}
+
+.yellow-background {
+  background-color: rgb(240, 199, 35, 0.75); /* Standard yellow */
+}
+
 
 .down {
   width: 30%;
@@ -1079,6 +1133,13 @@ button#submit-button:hover {
   line-height: 37px;
 }
 
+.footer-social-icons a:not(:first-child) {
+  padding-left: 40px; /* Adjust the value as needed */
+}
+
+.footer-bottom {
+    padding-top: 40px;
+}
 .footer_widget .footer-address li i {
   margin-right: 8px;
 }
@@ -1134,6 +1195,11 @@ button#submit-button:hover {
   color: var(--primary-color);
 }
 
+.footer-contact li {
+  white-space: nowrap;
+}
+
+
 
 
 /* Media Queries */
@@ -1167,7 +1233,12 @@ button#submit-button:hover {
   }
 
   .hero {
-    min-height: 50vh; /* Altura más pequeña para la sección hero en dispositivos móviles */
+    width: 100%;
+  height: 100vh; /* Adjust based on your design */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Altura más pequeña para la sección hero en dispositivos móviles */
   }
 
   .section {

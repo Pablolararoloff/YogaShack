@@ -68,6 +68,16 @@
   $(".navbar-collapse a").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
+  
+  $(".navbar-collapse a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+  });
+
+  // Toggle Navbar on small screens
+  $(".navbar-toggler").on("click", function () {
+    var target = $(this).data("target"); // Get the target from data-target attribute
+    $(target).toggleClass("in"); // Toggle the 'in' class to show/hide the navbar
+  });
 
   // AOS ANIMATION
   AOS.init({
