@@ -103,28 +103,42 @@ body {
 /* hero section */
 /* ********************************* */
 .hero-description {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  letter-spacing: 3px;
-  font-size: 21px;
+  letter-spacing: 0.6px;
+  font-size: 15px;
   color: white;
-  margin-top: 80px;
+  margin-top: 60px;
+  margin-left: auto; /* Center the text block */
+  margin-right: auto; /* Center the text block */
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px; /* Adjust this value as needed */
 }
+
+
 
 .schedule-btn {
   display: inline-block;
-  padding: 8px 20px;
-  background-color: rgba(240, 199, 35);
-  color: #000; /* Adjust based on your design preference */
+  padding: 5px 10px;
+  background-color: rgba(240, 199, 35, 1);
+  color: #000;
   border: none;
   border-radius: 5px;
   text-decoration: none;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 20px;
+  /* Adjusted space between the text and the button */
+  position: relative;
+  /* Needed for z-index to work */
+  z-index: 10;
+  /* Higher z-index to ensure it's above other elements */
 }
 
 .schedule-btn:hover {
   transform: scale(1.05);
-  background-color: rgba(255, 215, 0); /* Slightly lighter shade on hover */
+  background-color: rgba(255, 215, 0);
+  /* Slightly lighter shade on hover */
 }
 
 .hero {
@@ -146,8 +160,17 @@ body {
   opacity: 0.7;
 }
 
+.video-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0e37849b; /* Semi-transparent blue */
+  z-index: 1; /* Ensures it's above the video but below any text/content */
+}
+
 #myVideo {
-  /* position: fixed; */
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -157,14 +180,15 @@ body {
 .logo-image {
   width: 50%;
   max-width: 100%;
-  
+
   height: auto;
-  
+
   display: block;
   /* To remove any default inline spacing and center the image */
   margin: 0 auto;
   /* Center the image horizontally in its container */
 }
+
 .logo-image {
   max-width: 100%;
   height: auto;
@@ -173,7 +197,8 @@ body {
 
 @media (max-width: 768px) {
   .hero-text {
-    padding: 0 20px; /* Adds some padding on smaller screens */
+    padding: 0 20px;
+    /* Adds some padding on smaller screens */
   }
 }
 
@@ -237,17 +262,20 @@ strong {
 }
 
 .section-container-main {
-  margin-bottom: 0px; /* Space below each section */
+  margin-bottom: 0px;
+
 }
 
 .section-container {
-  background-color: rgba(240, 199, 35, 0.35); /* Apply the yellow background */
-  padding: 35px; 
-     
+  background-color: rgba(240, 199, 35, 0.35);
+  /* Apply the yellow background */
+  padding: 35px;
+
 }
 
 .rounded-custom {
-  border-radius: 15px; /* Adjust the px value based on your design preference */
+  border-radius: 15px;
+  /* Adjust the px value based on your design preference */
 }
 
 
@@ -256,7 +284,8 @@ strong {
 }
 
 .yellow-background {
-  background-color: rgb(240, 199, 35, 0.75); /* Standard yellow */
+  background-color: rgb(240, 199, 35, 0.75);
+  /* Standard yellow */
 }
 
 
@@ -349,13 +378,17 @@ strong {
 }
 
 .btn-primary.custom-btn {
-  background-color: rgb(40, 146, 188) !important; /* Sets the background color */
-  border-color: rgb(40, 146, 188) !important; /* Sets the border color to match */
+  background-color: rgb(40, 146, 188) !important;
+  /* Sets the background color */
+  border-color: rgb(40, 146, 188) !important;
+  /* Sets the border color to match */
 }
 
 .btn-primary.custom-btn:hover {
-  background-color: rgb(35, 131, 168) !important; /* Slightly darker shade for hover effect */
-  border-color: rgb(35, 131, 168) !important; /* Hover border color to match */
+  background-color: rgb(35, 131, 168) !important;
+  /* Slightly darker shade for hover effect */
+  border-color: rgb(35, 131, 168) !important;
+  /* Hover border color to match */
 }
 
 .spad {
@@ -482,12 +515,17 @@ strong {
 }
 
 .gallery-intro {
-  text-align: center; /* Centra el texto horizontalmente */
+  text-align: center;
+  /* Centra el texto horizontalmente */
   display: flex;
-  flex-direction: column; /* Organiza los elementos internos en una columna */
-  justify-content: center; /* Centra el contenido verticalmente dentro del contenedor */
-  align-items: center; /* Asegura que los elementos hijos también estén centrados */
-  height: 100%; /* Ajusta esto según necesites */
+  flex-direction: column;
+  /* Organiza los elementos internos en una columna */
+  justify-content: center;
+  /* Centra el contenido verticalmente dentro del contenedor */
+  align-items: center;
+  /* Asegura que los elementos hijos también estén centrados */
+  height: 100%;
+  /* Ajusta esto según necesites */
 }
 
 .project img {
@@ -1062,6 +1100,7 @@ button#submit-button:hover {
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
+
   /* Ajustes para tablets */
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -1069,14 +1108,17 @@ button#submit-button:hover {
   }
 
   h1 {
-    font-size: 36px; /* Tamaño más pequeño para H1 en dispositivos más pequeños */
+    font-size: 36px;
+    /* Tamaño más pequeño para H1 en dispositivos más pequeños */
   }
 
   .event-item .ei-img {
-    width: 100%; /* Hace que las imágenes de eventos sean de ancho completo en dispositivos más pequeños */
+    width: 100%;
+    /* Hace que las imágenes de eventos sean de ancho completo en dispositivos más pequeños */
     float: none;
     margin-right: 0;
-    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    margin-bottom: 20px;
+    /* Añade espacio debajo de la imagen */
   }
 
   .event-item .ei-text {
@@ -1085,6 +1127,7 @@ button#submit-button:hover {
 }
 
 @media only screen and (max-width: 576px) {
+
   /* Ajustes para teléfonos móviles */
   .navbar {
     padding: 0.5rem;
@@ -1092,15 +1135,18 @@ button#submit-button:hover {
 
   .hero {
     width: 100%;
-  height: 100vh; /* Adjust based on your design */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Altura más pequeña para la sección hero en dispositivos móviles */
+    height: 100vh;
+    /* Adjust based on your design */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura más pequeña para la sección hero en dispositivos móviles */
   }
 
   .section {
-    padding: 3rem 0; /* Menos padding en las secciones para dispositivos móviles */
+    padding: 3rem 0;
+    /* Menos padding en las secciones para dispositivos móviles */
   }
 
   #myVideo {
@@ -1108,13 +1154,16 @@ button#submit-button:hover {
     height: auto;
   }
 
-   .logo-image {
-    width: 80%; /* Logotipo más grande en dispositivos móviles */
+  .logo-image {
+    width: 80%;
+    /* Logotipo más grande en dispositivos móviles */
   }
 
   .event-item {
-    padding: 20px; /* Añade padding para hacer los items de evento más legibles */
-    margin-bottom: 20px; /* Espaciado entre eventos */
+    padding: 20px;
+    /* Añade padding para hacer los items de evento más legibles */
+    margin-bottom: 20px;
+    /* Espaciado entre eventos */
   }
 }
 
@@ -1138,6 +1187,6 @@ body {
 @media only screen and (max-width: 576px) {
   body {
     font-size: 12px;
-    
+
   }
 }
