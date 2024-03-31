@@ -66,6 +66,15 @@ body {
   font-family: var(--base-font-family);
 }
 
+.whatsapp-float {
+  position: fixed;
+  width: 40px; /* Adjust the size of the icon */
+  height: 40px; /* Adjust the size of the icon */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right side */
+  z-index: 100; /* Ensure the icon floats above other content */
+}
+
 .navbar {
   background: #c7c7c718;
   padding: 1rem;
@@ -147,6 +156,14 @@ body {
   position: relative;
   overflow: hidden;
 }
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This should center the content horizontally */
+  text-align: center; /* Ensures text within is centered */
+}
+
 
 .bg-overlay {
   background: var(--dark-color);
