@@ -21,49 +21,26 @@
   <a href="https://wa.me/+27818695144" class="whatsapp-float" target="_blank">
     <img src="whatsapp.png" alt="Chat on WhatsApp">
   </a>
-  <!-- nav bar starts -->
-  <div class="navbar navbar-expand-lg fixed-top">
+
+  <!-- 1) nav bar starts -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <img src="logo.png" alt="The Yoga Schack Logo" style="height: 40px;">
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-lg-auto">
-          <li class="nav-item">
-            <a href="#home" class="nav-link smoothScroll">Home</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a href="#about" class="nav-link smoothScroll">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#online" class="nav-link smoothScroll">Online</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link smoothScroll">Contact</a>
-          </li>
-          
-
-          <!-- <li class="nav-item">
-            <a href="#gallery" class="nav-link smoothScroll">Gallery</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#team" class="nav-link smoothScroll">Our Team</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a href="#contact" class="nav-link smoothScroll">Contacts</a>
-          </li> -->
+          <li class="nav-item"><a href="#home" class="nav-link smoothScroll">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link smoothScroll">About</a></li>
+          <li class="nav-item"><a href="#calendar-section" class="nav-link smoothScroll">Schedule</a></li>
+          <li class="nav-item"><a href="#event" class="nav-link smoothScroll">Events</a></li>
+          <li class="nav-item"><a href="#online" class="nav-link smoothScroll">Online</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link smoothScroll">Contact</a></li>
         </ul>
       </div>
     </div>
-  </div>
-  <!-- navbar ends -->
+  </nav>
+  <!-- 1) navbar ends -->
 
-
-  <!-- section 1 -->
+  <!-- 2) LANDING PAGE -->
   <div class="section-container-main">
     <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
       <div class="bg-overlay">
@@ -81,25 +58,65 @@
               ecstatic dances, breathwork journey’s and meditation classes. Come join us as we take you on a journey
               towards inner peace and harmony.
             </h4>
-            <a href="#calendar-section" class="schedule-btn">schedule</a> 
+            <a href="#calendar-section" class="schedule-btn">View schedule</a>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <!-- section 1 ends -->
+  <!-- 2) LANDING PAGE ENDS -->
 
+  <!-- 3) ABOUT US SECTION-->
+  <div class="section-container">
+    <section class="home-about spad" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="home_about_pic">
+              <div class="home_about_pic_item large-item set-bg" data-setbg="about-1.JPG" data-aos="fade-up"
+                data-aos-delay="300"></div>
+              <div class="home_about_pic_item">
+                <div class="home_about_pic_item_inner set-bg" data-setbg="about-2.JPG" data-aos="fade-up"
+                  data-aos-delay="400"></div>
+                <div class="home_about_pic_item_inner set-bg" data-setbg="about-3.JPG" data-aos="fade-up"
+                  data-aos-delay="500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="home_about_text" data-aos="fade-up" data-aos-delay="300">
+              <div class="section-title">
+                <h2>Welcome to <br>The Yoga Shack</h2>
+              </div>
+              <span>"Through breath, we transform uncertainty into power."</span>
+              <p>Welcome Home 😊! At The Yoga Shack, we’re all about real connections, feeling good, and finding a bit
+                of
+                peace in our busy lives. Whether you’re here to stretch out the stress with some yoga, take a deep
+                breath
+                in our breathwork sessions, dance like nobody's watching, or just hang out with a juice and a smoothie
+                bowl in our cozy cafe or secret garden, you’ve got a place here. Check out what we’ve got planned below
+                and come join us. Let’s take this wellness journey together!</p>
+              <p class="para-2">
+
+                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="400">More About Us
+                  &rarrhk;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- 3) ABOUT US ENDS -->
+
+  <!-- 4) SCHEDULE PDF -->
   <div class="pdf-calendar" id="calendar-section">
     <img src="schedule.png" alt="Our Calendar">
     <a href="schedule.png" download>Download our calendar</a>
   </div>
-  
+  <!-- 4) SCHEDULE PDF ENDS -->
 
-  <!-- <div class="section-container">
-        <div id="app"></div>
-  </div> -->
-
-  <!-- YOGA SHACK SPECIAL EVENTS!!! -->
+  <!-- 5) YOGA SHACK SPECIAL EVENTS -->
   <div class="section-container">
     <section class="event-section spad bg-white rounded-custom" id="event">
       <div class="container">
@@ -161,8 +178,9 @@
       </div>
     </section>
   </div>
+  <!-- 5) YOGA SHACK SPECIAL EVENTS ENDS -->
 
-  <!-- section-3 starts HERE GOES EXTERNAL EVENTS: CAPETOWN RETREATS AND OTHERS -->
+  <!-- 6) ONLINE BREATHWORK -->
   <div class="section-container">
     <section class="event-section spad bg-white rounded-custom" id="online">
       <div class="container">
@@ -170,10 +188,13 @@
           <div class="col-lg-8 col-md-10">
             <div class="section-title text-center">
               <h2 style="color: rgb(240, 199, 35)">Online Breathwork Sessions</h2>
-              <p>Discover the power of breathwork and book your session now.</p>
+              <p>Discover the power of breathwork and book your session now. For more details, <a
+                  href="https://michael-lowman.com/" target="_blank" style="color: rgb(240, 199, 35);">visit our
+                  Breathwork page</a>.</p>
             </div>
             <div class="text-center">
-              <a href="https://calendly.com/thesoulfulsurfer/30min" class="btn btn-primary custom-btn">Book Your Session</a>
+              <a href="https://calendly.com/thesoulfulsurfer/30min" class="btn btn-primary custom-btn"
+                target="_blank">Book Your free consultation</a>
             </div>
           </div>
         </div>
@@ -181,6 +202,10 @@
     </section>
   </div>
 
+
+  <!-- 6) ONLINE BREATHWORK ENS -->
+
+  <!-- 7) CAPETOWN RETREATS AND OTHERS -->
   <div class="section-container">
     <section class="event-section spad bg-white rounded-custom" id="retreats">
       <div class="container">
@@ -215,54 +240,9 @@
       </div>
     </section>
   </div>
+  <!-- 7) CAPETOWN RETREATS AND OTHERS -->
 
-  <!-- section-3 ends -->
-
-  <!-- ABOUT US SECTION-->
-  <div class="section-container">
-    <section class="home-about spad" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="home_about_pic">
-              <div class="home_about_pic_item large-item set-bg" data-setbg="about-1.JPG" data-aos="fade-up"
-                data-aos-delay="300"></div>
-              <div class="home_about_pic_item">
-                <div class="home_about_pic_item_inner set-bg" data-setbg="about-2.JPG" data-aos="fade-up"
-                  data-aos-delay="400"></div>
-                <div class="home_about_pic_item_inner set-bg" data-setbg="about-3.JPG" data-aos="fade-up"
-                  data-aos-delay="500"></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="home_about_text" data-aos="fade-up" data-aos-delay="300">
-              <div class="section-title">
-                <h2>Welcome to <br>The Yoga Shack</h2>
-              </div>
-              <span>"Through breath, we transform uncertainty into power."</span>
-              <p>Welcome Home 😊! At The Yoga Shack, we’re all about real connections, feeling good, and finding a bit
-                of
-                peace in our busy lives. Whether you’re here to stretch out the stress with some yoga, take a deep
-                breath
-                in our breathwork sessions, dance like nobody's watching, or just hang out with a juice and a smoothie
-                bowl in our cozy cafe or secret garden, you’ve got a place here. Check out what we’ve got planned below
-                and come join us. Let’s take this wellness journey together!</p>
-              <p class="para-2">
-
-                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="400">More About Us
-                  &rarrhk;</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- ABOUT US ENDS -->
-
-
-  <!-- PHOTO GALLERY -->
+  <!-- 8) PHOTO GALLERY -->
   <div class="section-container">
     <section class="gallery-intro" id="gallery">
       <div class="gallery-intro">
@@ -278,12 +258,24 @@
         <div class="project"><img src="c.jpg" alt="" class="img-fluid"></div>
         <div class="project"><img src="dance.png" alt="" class="img-fluid"></div>
         <div class="project"><img src="1.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/surf.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/yoga.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/family.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/freedom.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/friends.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/trust.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/surfing.JPG" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/surfers.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/akro.jpg" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/akro3.JPG" alt="" class="img-fluid"></div>
+        <div class="project"><img src="/public/show.JPG" alt="" class="img-fluid"></div>
         <!-- Repite para cada imagen -->
       </div>
     </section>
   </div>
-  <!-- PHOTO GALLERY ENDS -->
+  <!-- 8) PHOTO GALLERY ENDS -->
 
+  <!-- 9) MEET OUR TEAM -->
   <div class="section-container">
     <section class="our-team-area section-padding-80-50" id="team">
       <div class="container">
@@ -362,8 +354,9 @@
       </div>
     </section>
   </div>
+  <!-- 9) MEET OUR TEAM ENDS-->
 
-  <!-- section 9  starts-->
+  <!-- 10) CONTACT -->
   <div class="section-container">
     <section class="contact section" id="contact">
       <div class="container">
@@ -406,9 +399,9 @@
       </div>
     </section>
   </div>
-  <!-- section 9  ends-->
+  <!-- 10) CONTACT ENS -->
 
-  <!-- Footer Section Starts -->
+  <!-- 11) Footer Section Starts -->
   <footer class="footer" aria-label="Footer">
     <div class="container">
       <div class="row">
@@ -427,13 +420,12 @@
         </div>
         <!-- Inspiration Links -->
         <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6 footer-section">
-          <h5>Inspiration</h5>
+          <h5>What I do</h5>
           <ul class="footer-links">
-            <li><a href="#">Yoga</a></li>
-            <li><a href="#">Breathwork</a></li>
-            <li><a href="#">Akroyoga</a></li>
-            <li><a href="#">Vegetarian</a></li>
-            <li><a href="#">Meditation</a></li>
+            <li><a href="https://michael-lowman.com/what-i-do/#online1on1">Breathwork</a></li>
+            <li><a href="https://michael-lowman.com/what-i-do/#online1on1">Online 1 on 1</a></li>
+            <li><a href="https://michael-lowman.com/what-i-do/#online1on1">Life coaching</a></li>
+            <li><a href="https://michael-lowman.com/what-i-do/#online1on1">Corporate sessions</a></li>
           </ul>
         </div>
         <!-- About Us Links -->
@@ -450,7 +442,7 @@
         <div class="col-lg-2 col-md-3 col-sm-6 footer-section">
           <h5>Contact Us</h5>
           <ul class="footer-contact">
-            <li><i class="fa fa-phone" aria-hidden="true"></i> whatsapp + 94 581 5306</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> whatsapp + 94 76 581 5306</li>
             <li><i class="fa fa-envelope" aria-hidden="true"></i> thesoulfulsurfer@gmail.com</li>
             <li><i class="fa fa-location-arrow" aria-hidden="true"></i> Prthana rd off main rd - Arugam Bay - Sri Lanka
             </li>
@@ -476,17 +468,13 @@
       </div>
     </div>
   </footer>
-  <!-- Footer Section Ends -->
+  <!-- 11) Footer Section Ends -->
 
   <!-- Membership Form Section (Unchanged as it is separate from the footer) -->
   <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel">
     ...
   </div>
   <!-- Membership Form Section Ends -->
-
-
-  <!-- section 11 ends  -->
-
 
   <!-- scripts -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
