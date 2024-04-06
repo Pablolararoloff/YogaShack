@@ -24,8 +24,7 @@
     var bg = $(this).data("setbg");
     $(this).css("background-image", "url(" + bg + ")");
     $(this).css("background-size", "cover"); // Ensure the background covers the entire element
-});
-
+  });
 
   $(".header-section .nav-menu .mainmenu ul li").on("mousehover", function () {
     $(this).addClass("active");
@@ -45,8 +44,8 @@
   $(".show-result-select").niceSelect();
 
   /*------------------
-       Timetable Filter
-    --------------------*/
+     Timetable Filter
+  --------------------*/
   $(".timetable-controls ul li").on("click", function () {
     var tsfilter = $(this).data("tsfilter");
     $(".timetable-controls ul li").removeClass("active");
@@ -65,10 +64,6 @@
       }
     });
   });
-  $(".navbar-collapse a").on("click", function () {
-    $(".navbar-collapse").collapse("hide");
-  });
-  
   $(".navbar-collapse a").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
@@ -101,4 +96,14 @@
       event.preventDefault();
     });
   });
+
+  // Add scroll event listener for navbar background change
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) { // If page is scrolled more than 0px
+        $('.navbar').css('background-color', 'rgb(240, 199, 35, 0.75)'); // Change navbar background to yellow
+    } else {
+        $('.navbar').css('background-color', ''); // Reset navbar background
+    }
+  });
+
 })(jQuery);
