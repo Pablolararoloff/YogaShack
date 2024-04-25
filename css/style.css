@@ -41,6 +41,7 @@
 }
 
 a {
+  font-size: 18px;
   color: var(--link-color);
   font-weight: normal;
   text-decoration: none;
@@ -946,7 +947,10 @@ strong {
 .text-center {
   text-align: center !important;
 }
+.fa {
+  font-size: 25px;
 
+}
 .team-content-area .member-social-info {
   position: relative;
   z-index: 1;

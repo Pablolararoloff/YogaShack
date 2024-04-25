@@ -1,113 +1,92 @@
 .footer {
   background: rgba(240, 199, 35, 0.75);
-  padding-top: 70px;
-  padding-bottom: 30px; /* Added padding at the bottom */
+  font-family: 'Arial', sans-serif; /* Modern, readable typography */
+  padding: 50px 0 0 0; /* Added padding at the bottom */
 }
 
-.footer-section,
-.footer-widget,
-.footer-social-icons a {
-  text-align: center; /* Center content for smaller screens */
-}
-.footer-section ul {
-  list-style: none; /* Removes the default list item markers */
-  padding-left: 0; /* Removes the default padding */
+.footer a {
+  color: #151515; /* Brand color for links */
+  text-decoration: none; /* No underlines on links */
 }
 
-.footer-heading,
-.footer-widget h5 {
-  margin-bottom: 25px;
-  color: #ffffff;
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline; /* Underline on hover/focus for better accessibility */
+}
+
+/* Footer Sections */
+.footer-section {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.footer-heading {
+  color: #333; /* Dark text for better readability */
+  font-size: 1.5em; /* Larger font size for headings */
+}
+
+.footer-hours,
+.footer-links,
+.footer-contact {
+  list-style: none; /* Remove list bullets */
+  padding: 0; /* Remove default padding */
 }
 
 .footer-hours li,
-.footer-links li a,
+.footer-links li,
 .footer-contact li {
-  list-style: none;
-  color: #000;
-  line-height: 1.5;
-  margin-bottom: 10px; /* Reduced space between items for compact look */
+  line-height: 1.6; /* Adequate line height for readability */
+  margin-bottom: 10px; /* Space between list items */
 }
 
-.footer-hours li i,
-.footer-contact li i {
-  color: #e8505b;
-  margin-right: 10px;
+/* Icons in the footer */
+.fa {
+  margin-right: 8px; /* Space between icon and text */
 }
 
+/* Newsletter Form */
 .subscribe-form {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; /* Additional spacing before the form */
+  display: flex; /* Aligns the form items inline */
+  margin-top: 10px; /* Space above the form */
 }
 
-.subscribe-form input,
+.subscribe-form input[type="email"] {
+  flex-grow: 1; /* Allows the input to fill the space */
+  margin-right: 10px; /* Space between input and button */
+  padding: 8px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Subtle border for the input */
+}
+
 .subscribe-form button {
-  height: 40px; /* Adjusted height for consistency */
+  background-color: #0077cc; /* Brand color for button */
+  color: white; /* White text for the button */
+  border: none; /* No border */
+  padding: 8px 12px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.subscribe-form input {
-  flex-grow: 1; /* Input field takes available space */
-  margin-right: -40px; /* Negative margin to overlay button on input */
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #000000; /* Separator */
+  padding-top: 10px; /* Space above the content */
+  font-size: 0.8rem; /* Smaller font size for copyright text */
 }
 
 .footer-social-icons {
-  padding-top: 20px; /* Space before social icons */
+  text-align: right; /* Aligns the social icons to the right */
 }
 
-.footer-social-icons a:not(:first-child) {
-  padding-left: 20px;
+.footer-social-icons a {
+  margin-left: 10px; /* Space between icons */
 }
 
-/* Responsive adjustments */
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
-  .footer-section,
-  .footer-widget {
-    margin-bottom: 30px; /* Space between sections */
+  .footer {
+    text-align: center; /* Center alignment on smaller screens */
   }
 
-  .subscribe-form button {
-    width: 40px; /* Adjust button width to fit content */
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-social-icons a:not(:first-child) {
-    padding-left: 15px; /* Reduce spacing between icons for very small screens */
-  }
   .footer-social-icons {
-    text-align: center; /* Centers social icons on smaller screens */
-  }
-  .footer-bottom .row .col-lg-6,
-  .footer-bottom .row .col-md-6,
-  .footer-bottom .row .col-sm-6 {
-    text-align: center;
-    width: 100%; /* Ensures the column takes full width */
-  }
-}
-
-
-/* Adjustments for very small screens */
-@media (max-width: 400px) {
-  .footer-heading,
-  .footer-widget h5,
-  .footer-hours li,
-  .footer-links li a,
-  .footer-contact li {
-    font-size: smaller; /* Reduce font size for very small screens */
-    
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-bottom .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-bottom .footer-social-icons {
-    order: -1; /* Moves social icons above the copyright text */
-    text-align: center; /* Center-align the icons for aesthetics */
-    margin-bottom: 20px; /* Adds some space below the icons */
+    margin-top: 10px; /* Space above icons on smaller screens */
+    text-align: center; /* Center align social icons on smaller screens */
   }
 }
