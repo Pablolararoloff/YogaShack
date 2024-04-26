@@ -96,8 +96,10 @@ body {
 }
 
 .navbar {
-  background: #c7c7c718;
+  background: #4877bc18;
   padding: 1rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(130, 164, 201, 0.236); /* Adjust the background color opacity as needed */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
