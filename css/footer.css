@@ -1,92 +1,129 @@
 .footer {
-  background: rgba(240, 199, 35, 0.75);
-  font-family: 'Arial', sans-serif; /* Modern, readable typography */
-  padding: 50px 0 0 0; /* Added padding at the bottom */
+  background-color: rgb(244, 213, 90); /* Keeping the bright yellow background */
+  color: #333; /* Dark text for contrast */
+  padding: 40px 20px; /* Generous padding for overall spacing */
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Centralize footer content */
+}
+
+.footer h2, .footer h5 {
+  color: #333;
+  margin-bottom: 20px; /* Consistent space below headings */
+}
+
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px; /* Adding bottom margin to lists */
+}
+
+.footer li {
+  font-size: 16px;
+  line-height: 1.8;
+  padding-bottom: 10px; /* Space between list items */
 }
 
 .footer a {
-  color: #151515; /* Brand color for links */
-  text-decoration: none; /* No underlines on links */
+  color: #333;
+  text-decoration: none; /* Remove underline */
 }
 
-.footer a:hover,
-.footer a:focus {
-  text-decoration: underline; /* Underline on hover/focus for better accessibility */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-content: center;
+  justify-content: space-around;
 }
 
-/* Footer Sections */
-.footer-section {
-  margin-bottom: 20px; /* Space between sections */
+.footer a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
-.footer-heading {
-  color: #333; /* Dark text for better readability */
-  font-size: 1.5em; /* Larger font size for headings */
+.newsletter-container {
+  background-color: #ffffff3d;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Space below the newsletter form */
 }
 
-.footer-hours,
-.footer-links,
-.footer-contact {
-  list-style: none; /* Remove list bullets */
-  padding: 0; /* Remove default padding */
+.newsletter-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-hours li,
-.footer-links li,
-.footer-contact li {
-  line-height: 1.6; /* Adequate line height for readability */
-  margin-bottom: 10px; /* Space between list items */
+#new {
+  padding: 20px;
 }
 
-/* Icons in the footer */
-.fa {
-  margin-right: 8px; /* Space between icon and text */
+.form-group {
+  width: 50%; /* Full width form groups for alignment */
+  margin-bottom: 15px; /* Consistent margin for form elements */
 }
 
-/* Newsletter Form */
-.subscribe-form {
-  display: flex; /* Aligns the form items inline */
-  margin-top: 10px; /* Space above the form */
+.form-group input, .newsletter button {
+  width: 100%; /* Uniform width for inputs and button */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded borders for inputs and button */
 }
 
-.subscribe-form input[type="email"] {
-  flex-grow: 1; /* Allows the input to fill the space */
-  margin-right: 10px; /* Space between input and button */
-  padding: 8px; /* Padding inside the input */
-  border: 1px solid #ccc; /* Subtle border for the input */
+.newsletter button {
+  background-color: #007bff; /* Vibrant blue for button */
+  color: white;
+  cursor: pointer;
+  border: none; /* No border for a cleaner button */
+}
+.subscribe-button {
+  background-color: rgb(40, 146, 188); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
-.subscribe-form button {
-  background-color: #0077cc; /* Brand color for button */
-  color: white; /* White text for the button */
-  border: none; /* No border */
-  padding: 8px 12px; /* Padding inside the button */
-  cursor: pointer; /* Pointer cursor on hover */
-}
 
-/* Footer Bottom */
-.footer-bottom {
-  border-top: 1px solid #000000; /* Separator */
-  padding-top: 10px; /* Space above the content */
-  font-size: 0.8rem; /* Smaller font size for copyright text */
+.footer-bottom p {
+  font-size: 12px;
+  padding-top: 20px; /* Space above the footer bottom content */
+  border-top: 1px solid #aaa; /* Light border for separation */
+  
 }
 
 .footer-social-icons {
-  text-align: right; /* Aligns the social icons to the right */
+  margin-top: 10px; /* Space above social icons */
 }
 
 .footer-social-icons a {
-  margin-left: 10px; /* Space between icons */
+  margin: 0 10px; /* Space between icons */
+}
+.social-icons {
+  margin-bottom: 20px;
+}
+           
+#newsletter-container {
+  padding: 15px;
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .footer {
-    text-align: center; /* Center alignment on smaller screens */
+      text-align: center; /* Ensure center alignment on small screens */
   }
-
-  .footer-social-icons {
-    margin-top: 10px; /* Space above icons on smaller screens */
-    text-align: center; /* Center align social icons on smaller screens */
+  .newsletter-container form {
+      flex-direction: column;
+  }
+  .form-group input, .newsletter button {
+      width: 100%; /* Full width on small screens for inputs and button */
   }
 }

@@ -526,12 +526,14 @@ pre code {
   }
 }
 .row {
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 .no-gutters {
   margin-right: 0;
