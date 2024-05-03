@@ -6,7 +6,7 @@
   text-align: center; /* Centralize footer content */
 }
 
-.footer h2, .footer h5 {
+.footer h2, .footer h5, .footer h3{
   color: #333;
   margin-bottom: 20px; /* Consistent space below headings */
 }
@@ -59,6 +59,7 @@
 #new {
   padding: 20px;
 }
+
 
 .form-group {
   width: 50%; /* Full width form groups for alignment */
